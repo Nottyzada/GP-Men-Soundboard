@@ -11,6 +11,8 @@ As músicas ficam em uma biblioteca própria e podem ser escolhidas no seletor d
 
 Os efeitos sonoros ficam armazenados separadamente na biblioteca de efeitos. O preset inicial inclui **Homem 3** como efeito; novos efeitos podem ser importados pelo botão `Importar efeitos`.
 
+A área **Cronômetros** permite criar contagens com nome, iniciar, pausar, zerar e remover cada uma. Os cronômetros também ficam salvos no navegador.
+
 ## Preparação (com internet, antes do evento)
 1. Abra o site no Chromebook, **no mesmo navegador e perfil** que usará na apresentação.
 2. Carregue a música e importe os efeitos. Tudo fica salvo no navegador.
