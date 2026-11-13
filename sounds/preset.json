@@ -1,2 +1,11 @@
-{"music":{"file":"final.mp3","name":"Final"},
- "effects":[{"file":"homem-1.mp3","label":"Homem 1"},{"file":"homem-2.mp3","label":"Homem 2"},{"file":"homem-3.mp3","label":"Homem 3"},{"file":"final-mais-30s.mp3","label":"Final +30s"}]}
+{
+  "music": [
+    {"file":"final.mp3","name":"Final"},
+    {"file":"final-mais-30s.mp3","name":"Final +30s"},
+    {"file":"homem-1.mp3","name":"Homem 1"},
+    {"file":"homem-2.mp3","name":"Homem 2"}
+  ],
+  "effects": [
+    {"file":"homem-3.mp3","label":"Homem 3"}
+  ]
+}

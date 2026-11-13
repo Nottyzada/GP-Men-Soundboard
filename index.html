@@ -19,6 +19,8 @@
 <main>
   <section class="panel music">
     <h2>Música de fundo</h2>
+    <label class="select-label" for="musicSelect">Escolha a faixa</label>
+    <select id="musicSelect" class="music-select" aria-label="Escolher música"></select>
     <div class="track"><span id="trackName" class="trackname">Nenhuma música carregada</span></div>
     <div class="progress">
       <span id="cur">0:00</span>
@@ -34,13 +36,16 @@
       <label class="vol grow">Volume <input id="musicVol" type="range" min="0" max="100" value="70"><output id="musicOut">70%</output></label>
       <label class="check"><input id="loop" type="checkbox"> Loop</label>
     </div>
-    <label class="btn file">Carregar música (MP3)<input id="musicFile" type="file" accept="audio/*" hidden></label>
-    <p class="hint">Espaço = Play/Pause</p>
+    <label class="btn file">Adicionar música (MP3)<input id="musicFile" type="file" accept="audio/*" hidden></label>
+    <p class="hint">Espaço = Play/Pause · As músicas ficam salvas separadamente dos efeitos</p>
   </section>
 
   <section class="panel fx">
     <div class="fxhead">
-      <h2>Efeitos sonoros</h2>
+      <div>
+        <h2>Efeitos sonoros</h2>
+        <p class="section-hint">Efeitos ficam nesta biblioteca e não alteram suas músicas.</p>
+      </div>
       <label class="btn file add">+ Importar efeitos<input id="fxFile" type="file" accept="audio/*,.mp3,.wav,.ogg" multiple hidden></label>
     </div>
     <div id="grid" class="grid"></div>
