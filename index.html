@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GP Men Soundboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <h1>GP Men Soundboard</h1>
+  <div class="master">
+    <span id="status" class="status"><i></i><b id="statusText">Parado</b></span>
+    <label class="vol">Master <input id="masterVol" type="range" min="0" max="100" value="100"><output id="masterOut">100%</output></label>
+    <button id="stopAll" class="btn stopall" title="Esc">STOP ALL</button>
+  </div>
+</header>
+
+<main>
+  <section class="panel music">
+    <h2>Música de fundo</h2>
+    <div class="track"><span id="trackName" class="trackname">Nenhuma música carregada</span></div>
+    <div class="progress">
+      <span id="cur">0:00</span>
+      <input id="seek" type="range" min="0" max="1000" value="0" disabled>
+      <span id="dur">0:00</span>
+    </div>
+    <div class="row">
+      <button id="play" class="btn big" disabled>▶ Play</button>
+      <button id="pause" class="btn big" disabled>❚❚ Pause</button>
+      <button id="stop" class="btn big" disabled>■ Stop</button>
+    </div>
+    <div class="row">
+      <label class="vol grow">Volume <input id="musicVol" type="range" min="0" max="100" value="70"><output id="musicOut">70%</output></label>
+      <label class="check"><input id="loop" type="checkbox"> Loop</label>
+    </div>
+    <label class="btn file">Carregar música (MP3)<input id="musicFile" type="file" accept="audio/*" hidden></label>
+    <p class="hint">Espaço = Play/Pause</p>
+  </section>
+
+  <section class="panel fx">
+    <div class="fxhead">
+      <h2>Efeitos sonoros</h2>
+      <label class="btn file add">+ Importar efeitos<input id="fxFile" type="file" accept="audio/*,.mp3,.wav,.ogg" multiple hidden></label>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty">Importe arquivos MP3, WAV ou OGG. Os 9 primeiros efeitos respondem às teclas 1 a 9.</p>
+  </section>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
