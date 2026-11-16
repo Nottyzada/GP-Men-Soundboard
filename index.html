@@ -52,23 +52,23 @@
     <p id="empty" class="empty">Importe arquivos MP3, WAV ou OGG. Os 9 primeiros efeitos respondem às teclas 1 a 9.</p>
   </section>
 
-  <section class="panel timers">
-    <div class="timerhead">
+  <section class="panel cronômetros">
+    <div class="cronômetrohead">
       <div>
-        <h2>Timers</h2>
+        <h2>Cronômetros</h2>
         <p class="section-hint">Crie contagens com nome para controlar cada momento da apresentação.</p>
       </div>
-      <form id="timerForm" class="timer-form">
-        <input id="timerName" type="text" maxlength="32" placeholder="Nome do timer" aria-label="Nome do timer" required>
-        <input id="timerMin" type="number" min="0" max="999" value="0" aria-label="Minutos" title="Minutos">
+      <form id="cronômetroForm" class="cronômetro-form">
+        <input id="cronômetroName" type="text" maxlength="32" placeholder="Nome do cronômetro" aria-label="Nome do cronômetro" required>
+        <input id="cronômetroMin" type="number" min="0" max="999" value="0" aria-label="Minutos" title="Minutos">
         <span>min</span>
-        <input id="timerSec" type="number" min="0" max="59" value="30" aria-label="Segundos" title="Segundos">
+        <input id="cronômetroSec" type="number" min="0" max="59" value="30" aria-label="Segundos" title="Segundos">
         <span>s</span>
-        <button class="btn timer-add" type="submit">+ Adicionar</button>
+        <button class="btn cronômetro-add" type="submit">+ Adicionar</button>
       </form>
     </div>
-    <div id="timerGrid" class="timer-grid"></div>
-    <p id="timerEmpty" class="empty">Nenhum timer criado.</p>
+    <div id="cronômetroGrid" class="cronômetro-grid"></div>
+    <p id="cronômetroEmpty" class="empty">Nenhum cronômetro criado.</p>
   </section>
 </main>
 <div id="toast" class="toast" role="status"></div>
